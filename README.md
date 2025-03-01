@@ -1,1 +1,1 @@
-# cash_repository
+# cash_register
