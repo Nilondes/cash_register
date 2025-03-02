@@ -1,0 +1,9 @@
+*
+!cash_register
+!.gitignore
+!docker-compose.yml
+!docker-entrypoint.sh
+!Dockerfile
+!README.md
+!requirements.txt
+!.dockerignore
