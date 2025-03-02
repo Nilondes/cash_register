@@ -21,6 +21,7 @@ class ItemAmount(models.Model):
 class Check(models.Model):
     file_path = models.FilePathField(path='')
     total_price = models.DecimalField(max_digits=7, decimal_places=2, validators=[MinValueValidator(Decimal(0.00))], default=Decimal(0.00))
+    timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return str(self.pk)
