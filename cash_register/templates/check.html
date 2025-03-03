@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кассовый чек</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .header, .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .items {
+            margin-bottom: 10px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .date {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>ООО "КОМПАНИЯ К"</div>
+        <div>Добро пожаловать</div>
+        <div>ККМ 00075411 #3969</div>
+        <div>ИНН 1087746942040</div>
+        <div>ЭКПЗ 3851495566</div>
+        <div>{{timestamp|date:"d.m.Y H:i"}}</div>
+    </div>
+
+    {%for item in items%}
+    <ul>
+    <li>
+        <p> {{ item }} - {{ item.amount }} x {{ item.item_price }}</p>
+    </li>
+    </ul>
+    {% endfor %}
+
+    <div class="total">
+        ИТОГО: {{total_price}}
+    </div>
+
+</body>
+</html>

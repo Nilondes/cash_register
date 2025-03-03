@@ -1,0 +1,34 @@
+[
+    {
+        "model": "api.item",
+        "pk": "1",
+        "fields": {
+            "title": "Book",
+            "price": "15.5"
+        }
+    },
+  {
+        "model": "api.item",
+        "pk": "2",
+        "fields": {
+            "title": "Water",
+            "price": "11.1"
+        }
+    },
+  {
+        "model": "api.itemamount",
+        "pk": "1",
+        "fields": {
+            "item": "1",
+            "amount": "5"
+        }
+    },
+  {
+        "model": "api.itemamount",
+        "pk": "2",
+        "fields": {
+            "item": "2",
+            "amount": "10"
+        }
+    }
+]
