@@ -12,7 +12,7 @@ class TransactionViewTestCase(TestCase):
 
 
     def test_unknown_item(self):
-        items = [1,2,3]
+        items = [90]
         resp = self.client.post(reverse('create_check'), {
                                                           "items": items
                                                             }
