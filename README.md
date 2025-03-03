@@ -27,7 +27,7 @@ The check has fields:
 
 The server saves the check, generates link to it as a QR-code which is a response to request.
 
-Scanning QR-code will commit GET {{root}}/media/<filename>
+Scanning QR-code will commit GET {{root}}/media/< filename >
 
 the response to which is the file.
 
